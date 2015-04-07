@@ -1,0 +1,5 @@
+<template name="addPatient">
+	<h1>Novo Paciente</h1>
+	<hr>
+	{{> quickForm collection="Patients" omitFields="createdAt" buttonContent="Enviar" id="insertPatientForm" type="insert"}}
+</template>

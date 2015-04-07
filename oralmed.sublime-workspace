@@ -1,0 +1,652 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"curr",
+				"currentRoute"
+			],
+			[
+				"rivals",
+				"rivalsRound"
+			],
+			[
+				"ri",
+				"rivalsClone"
+			],
+			[
+				"slide",
+				"slideWindowLeft"
+			],
+			[
+				"lat",
+				"latLng"
+			],
+			[
+				"star",
+				"startup"
+			],
+			[
+				"row",
+				"rowData"
+			],
+			[
+				"C",
+				"CLOCKS_PER_SEC"
+			],
+			[
+				"path",
+				"path_size"
+			],
+			[
+				"print",
+				"printHeap"
+			],
+			[
+				"shif",
+				"shiftUp"
+			],
+			[
+				"shift",
+				"shiftDown"
+			],
+			[
+				"heap",
+				"HeapNode"
+			],
+			[
+				"Heap",
+				"HeapNode"
+			],
+			[
+				"leve",
+				"level_max_graph"
+			],
+			[
+				"level",
+				"level_max_bfs"
+			],
+			[
+				"linked",
+				"linkedlist"
+			],
+			[
+				"Node",
+				"NodeList"
+			],
+			[
+				"o",
+				"option"
+			],
+			[
+				"g",
+				"g"
+			],
+			[
+				"get",
+				"getNeighbors"
+			],
+			[
+				"number",
+				"numberOfEdges"
+			],
+			[
+				"add",
+				"addEdgeWrapper"
+			],
+			[
+				"vertex",
+				"vertexNeighbors"
+			],
+			[
+				"st",
+				"st"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "lib/router.js",
+			"settings":
+			{
+				"buffer_size": 466,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "server/roles.js",
+			"settings":
+			{
+				"buffer_size": 397,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/login.html",
+			"settings":
+			{
+				"buffer_size": 271,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/templates/patients/patients.html",
+			"settings":
+			{
+				"buffer_size": 884,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/templates/patients/patients.js",
+			"settings":
+			{
+				"buffer_size": 951,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/templates/patients/add_patient.html",
+			"settings":
+			{
+				"buffer_size": 192,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/templates/patients/add_patient.js",
+			"settings":
+			{
+				"buffer_size": 292,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/templates/home.html",
+			"settings":
+			{
+				"buffer_size": 118,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "collections/patients.js",
+			"settings":
+			{
+				"buffer_size": 1872,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/rafael/oralmed/server/publications.js",
+		"/home/rafael/oralmed/client/header.html",
+		"/home/rafael/oralmed/client/main.html",
+		"/home/rafael/oralmed/client/init.js",
+		"/home/rafael/oralmed/collections/patients.js",
+		"/home/rafael/oralmed/client/templates/patients/patients.js",
+		"/home/rafael/oralmed/client/css/main.css",
+		"/home/rafael/oralmed/client/layout.html",
+		"/home/rafael/oralmed/client/templates/home.html",
+		"/home/rafael/oralmed/client/templates/pacientes/patients.js",
+		"/home/rafael/oralmed/client/templates/pacientes/add_patients.html",
+		"/home/rafael/oralmed/client/templates/pacientes/add_patients.js",
+		"/home/rafael/oralmed/client/templates/pacientes/patients.html",
+		"/home/rafael/oralmed/client/templates/tab.html",
+		"/home/rafael/oralmed/client/templates/pacientes.html",
+		"/home/rafael/oralmed/client/header.js",
+		"/home/rafael/oralmed/oralmed.js",
+		"/home/rafael/fixtures/fixtures.html",
+		"/home/rafael/fixtures/fixtures.js",
+		"/home/rafael/fixtures/collections/teams.js",
+		"/home/rafael/fixtures/output.txt",
+		"/home/rafael/neocafe-mobile/client/css/content.css",
+		"/home/rafael/neocafe-mobile/client/add_safrista.html",
+		"/home/rafael/neocafe-mobile/client/add_safrista.js",
+		"/home/rafael/neocafe-mobile/server/publications.js",
+		"/home/rafael/neocafe-mobile/client/home.js",
+		"/home/rafael/neocafe-mobile/client/lib/afamous.js",
+		"/home/rafael/neocafe-mobile/client/controllers/content.html",
+		"/home/rafael/neocafe-mobile/client/home.html",
+		"/home/rafael/neocafe-mobile/client/controllers/content.js",
+		"/home/rafael/neocafe-mobile/client/lib/routes.js",
+		"/home/rafael/neocafe-mobile/client/css/header.css",
+		"/home/rafael/neocafe-mobile/client/teste.js",
+		"/home/rafael/neocafe-mobile/client/teste.html",
+		"/home/rafael/neocafe-mobile/neocafe-mobiçe.sublime-project",
+		"/home/rafael/mobile/mobile.html",
+		"/home/rafael/busme/client/controllers/content.js",
+		"/home/rafael/Dropbox/neocafe-mobile/client/lib/afamous.js",
+		"/home/rafael/busme/client/lib/bootstrap.js",
+		"/home/rafael/Dropbox/neocafe-mobile/client/home.html",
+		"/home/rafael/Dropbox/neocafe-mobile/client/home.js",
+		"/home/rafael/busme/client/lib/routes.js",
+		"/home/rafael/Dropbox/neocafe-mobile/client/controllers/content.js",
+		"/home/rafael/Dropbox/neocafe-mobile/client/controllers/content.html",
+		"/home/rafael/busme/client/controller.html",
+		"/home/rafael/Dropbox/neocafe-mobile/client/lib/routes.js",
+		"/home/rafael/mobile/mobile.js",
+		"/home/rafael/pacientes/pacientes.js",
+		"/home/rafael/fluxodecaixa/fluxodecaixa.html",
+		"/home/rafael/fluxodecaixa/fluxodecaixa.js",
+		"/home/rafael/pacientes/pacientes.html",
+		"/home/rafael/pacientes/pacientes.css",
+		"/home/rafael/Dropbox/cloudstack/index.html",
+		"/home/rafael/pacientes/client/client.js",
+		"/home/rafael/pacientes/collections.js",
+		"/home/rafael/pacientes/tabular.js",
+		"/home/rafael/fluxodecaixa/fluxodecaixa.css",
+		"/home/rafael/pacientes/pacientesJson",
+		"/home/rafael/Dropbox/Grafos/Otim/main.cpp",
+		"/home/rafael/Dropbox/Grafos/Otim/main2.cpp",
+		"/home/rafael/Otim/main.cpp",
+		"/home/rafael/Otim/main2.cpp",
+		"/home/rafael/Dropbox/Grafos/Parte 2/grafo.c",
+		"/home/rafael/Dropbox/Grafos/Parte 2/graph.h",
+		"/home/rafael/Dropbox/Grafos/Parte 2/queue.h",
+		"/home/rafael/Dropbox/Grafos/Parte 2/heap.h",
+		"/home/rafael/Dropbox/Grafos/Parte 2/heap.c",
+		"/home/rafael/Dropbox/Grafos/Parte 2/stack.h",
+		"/home/rafael/Dropbox/Grafos/Parte 2/linkedlist.c",
+		"/home/rafael/Dropbox/Grafos/Parte 2/Makefile",
+		"/home/rafael/Dropbox/Grafos/Parte 2/linkedlist.h",
+		"/home/rafael/Dropbox/Grafos/Parte 2/queue.c",
+		"/home/rafael/Dropbox/Grafos/Parte 2/priorityqueue.h",
+		"/home/rafael/Dropbox/Grafos/Parte 2/priorityqueue.c",
+		"/home/rafael/Dropbox/Grafos/Parte 2/graph.c",
+		"/home/rafael/Dropbox/Grafos/grafo.c",
+		"/home/rafael/Dropbox/Grafos/generator.c",
+		"/home/rafael/Dropbox/Grafos/graph.c",
+		"/home/rafael/Dropbox/Grafos/graph.h",
+		"/home/rafael/Dropbox/Grafos/stack.c",
+		"/home/rafael/Dropbox/Grafos/stack.h",
+		"/home/rafael/Dropbox/Grafos/queue.c",
+		"/home/rafael/Dropbox/Grafos/queue.h",
+		"/home/rafael/Dropbox/Grafos/linkedlist.c",
+		"/home/rafael/Dropbox/Grafos/linkedlist.h",
+		"/home/rafael/Dropbox/Grafos/Makefile",
+		"/home/rafael/Dropbox/Algorithms and Data Structures/Assignment 1/list.h",
+		"/home/rafael/Dropbox/Algorithms and Data Structures/Assignment 1/list.c",
+		"/home/rafael/Dropbox/Algorithms and Data Structures/Assignment 1/Makefile",
+		"/home/rafael/Dropbox/Algorithms and Data Structures/Assignment 1/skiplist.c",
+		"/home/rafael/Dropbox/Algorithms and Data Structures/Assignment 1/dict2.c",
+		"/home/rafael/Dropbox/Algorithms and Data Structures/Assignment 1/skiplist.h",
+		"/id_rsa"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"disc",
+			"},",
+			"next",
+			"insert"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"push"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "lib/router.js",
+					"settings":
+					{
+						"buffer_size": 466,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								239,
+								239
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "server/roles.js",
+					"settings":
+					{
+						"buffer_size": 397,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								384,
+								384
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "client/login.html",
+					"settings":
+					{
+						"buffer_size": 271,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								55,
+								55
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "client/templates/patients/patients.html",
+					"settings":
+					{
+						"buffer_size": 884,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								750,
+								750
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "client/templates/patients/patients.js",
+					"settings":
+					{
+						"buffer_size": 951,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								486,
+								486
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "client/templates/patients/add_patient.html",
+					"settings":
+					{
+						"buffer_size": 192,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								140,
+								140
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "client/templates/patients/add_patient.js",
+					"settings":
+					{
+						"buffer_size": 292,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								282,
+								282
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "client/templates/home.html",
+					"settings":
+					{
+						"buffer_size": 118,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								84,
+								84
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "collections/patients.js",
+					"settings":
+					{
+						"buffer_size": 1872,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1802,
+								1802
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 740.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 94.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/home/rafael/colheita/colheita.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 202.0,
+	"status_bar_visible": true
+}

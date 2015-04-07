@@ -1,0 +1,41 @@
+<template name="patients">
+	<h1>Pacientes
+	<i class="fa fa-plus-circle" data-placement="right" title="Adicionar paciente"></i>
+	</h1>
+	<hr>
+	{{#if Template.subscriptionsReady}}
+		<table class="table table-hover">
+
+	  		<thead>
+	  			<tr>
+		  			<th>Nome</th>
+		  			<th>Gênero</th>
+		  			<th>Data de Nascimento</th>
+		  			<th>Idade</th>
+		  			<th>CPF</th>
+		  			<th>Telefone</th>
+		  			<th>Ações</th>
+		  		</tr>
+	  		</thead>
+		
+			<tbody>
+			{{#each patients}}
+				<tr>
+		  			<td>{{name}}</td>
+		  			<td>{{gender}}</td>
+		  			<td>{{formatDate birthday}}</td>
+		  			<td>{{getAge birthday}}</td>
+		  			<td>{{cpf}}</td>
+		  			<td>{{phone}}</td>
+		  			{{#if isInRole "Gerente"}}
+		  			<td><button type="button" class="btn btn-danger btn-xs">Deletar</button></td>
+		  			{{/if}}
+		  		</tr>
+			{{/each}}
+			</tbody>
+
+		</table>
+	{{else}}
+		{{> spinner}}
+	{{/if}}
+</template>

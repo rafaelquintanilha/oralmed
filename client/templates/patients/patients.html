@@ -9,11 +9,10 @@
 	  		<thead>
 	  			<tr>
 		  			<th>Nome</th>
-		  			<th>Gênero</th>
-		  			<th>Data de Nascimento</th>
+		  			<th>Plano</th>
 		  			<th>Idade</th>
-		  			<th>CPF</th>
-		  			<th>Telefone</th>
+		  			<th>Telefone 1</th>
+		  			<th>Telefone 2</th>
 		  			<th>Ações</th>
 		  		</tr>
 	  		</thead>
@@ -22,13 +21,16 @@
 			{{#each patients}}
 				<tr>
 		  			<td>{{name}}</td>
-		  			<td>{{gender}}</td>
-		  			<td>{{formatDate birthday}}</td>
+		  			<td>{{dentalcare}}</td>
 		  			<td>{{getAge birthday}}</td>
-		  			<td>{{cpf}}</td>
-		  			<td>{{phone}}</td>
+		  			<td>{{contact.phone}}</td>
+		  			<td>{{contact.phone2}}</td>
 		  			{{#if isInRole "Gerente"}}
-		  			<td><button type="button" class="btn btn-danger btn-xs">Deletar</button></td>
+		  			<td>
+		  				<i class="fa fa-medkit fa-2x" title="Tratamentos"></i>
+		  				<i class="fa fa-eye fa-2x" title="Ver informações"></i>
+		  				<i class="fa fa-close fa-2x" title="Deletar paciente"></i>
+		  			</td>
 		  			{{/if}}
 		  		</tr>
 			{{/each}}

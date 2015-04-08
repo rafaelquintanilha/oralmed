@@ -5,15 +5,21 @@ Template.patients.onCreated(function() {
   });
 });
 
-Template.patients.onCreated = function() {
-	$('.fa-plus-circle').tooltip();
-}
+Template.patients.onRendered(function() {
+	$('.fa').tooltip();
+});
 
 Template.patients.events({
 	'click .fa-plus-circle': function() {
 		Router.go('addPatient');
 	},
-	"click .btn-danger": function() {
+	'click .fa-eye': function() {
+		Router.go('patient', {_id: this._id});
+	},
+	'click .fa-medkit': function() {
+		Router.go('treatments', {_id: this._id});
+	},
+	"click .fa-close": function() {
 		var id = this._id; 
 		if ( confirm("Deseja deletar este paciente? Esse procedimento não pode ser desfeito") ) {
 			Meteor.call('deletePatient', id, function(error, result) {
@@ -21,7 +27,7 @@ Template.patients.events({
 			});
 		}
   	},
-})
+});
 
 Template.patients.helpers({
 	'patients': function() {

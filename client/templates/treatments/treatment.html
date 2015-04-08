@@ -1,0 +1,13 @@
+<template name="treatment">
+	<h1>Informações do Tratamento</h1>
+	<hr>
+	{{#if Template.subscriptionsReady}}
+      	{{> editTreatment}}
+  	{{else}}
+    	{{> spinner}}
+  	{{/if}}
+</template>
+
+<template name="editTreatment">
+	{{> quickForm collection="Treatments" omitFields="createdAt, patient_id" buttonContent="Editar" id="editTreatmentForm" type="update" doc=selectedDoc}}
+</template>

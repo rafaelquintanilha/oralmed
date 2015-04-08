@@ -3,5 +3,7 @@
 		<h1>Hey, boss</h1>
 	{{/if}}
 
-	<h2>Welcome, my friend!</h2>
+	{{#unless isInRole "Administrador"}}
+		<h2>Welcome, my friend!</h2>
+	{{/unless}}
 </template>

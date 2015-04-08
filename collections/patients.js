@@ -22,12 +22,71 @@ PatientsSchema = new SimpleSchema({
     type: String,
     label: "CPF",
     unique: true,
+    optional: true,
     regEx: /^\d{3}\.\d{3}\.\d{3}-\d{2}$/ // Não faz conta de dígito verificador, apenas olha a máscara
   },
-  phone: {
+  dentalcare: {
     type: String,
-    label: "Telefone",
+    label: "Plano Odontológico",
+    allowedValues: ['Amil', 'Bradesco', 'Metlife'],
+    autoform: {
+      afFieldInput: {
+        firstOption: "(Selecione)"
+      }
+    }
+  },
+  contact: {
+    type: Object,
+    label: "Contato"
+  },
+  'contact.phone': {
+    type: String,
+    label: "Telefone 1",
     regEx: /^\(\d{2}\)(\d?)\d{8}$/ 
+  },
+  'contact.phone2': {
+    type: String,
+    label: "Telefone 2",
+    optional: true,
+    regEx: /^\(\d{2}\)(\d?)\d{8}$/ 
+  },
+  'contact.email': {
+    type: String,
+    label: "E-mail",
+    optional: true,
+    regEx: SimpleSchema.RegEx.Email
+  },
+  address: {
+    type: Object,
+    label: "Endereço"
+  },
+  'address.street': {
+    type: String,
+    label: "Logradouro",
+  },
+  'address.number': {
+    type: Number,
+    label: "Número",
+    optional: true
+  },
+  'address.complement': {
+    type: String,
+    label: "Complemento",
+    optional: true
+  },
+  'address.neighbourhood': {
+    type: String,
+    label: "Bairro",
+  },
+  'address.city': {
+    type: String,
+    label: "Cidade",
+  },
+  'address.zipcode': {
+    type: String,
+    label: "CEP",
+    regEx: /^\d{5}-\d{3}$/,
+    optional: true
   },
   // Force value to be current date (on server) upon insert
   // and prevent updates thereafter.
@@ -53,6 +112,8 @@ PatientsSchema.messages({
   regEx: [
     {exp: /^\d{3}\.\d{3}\.\d{3}-\d{2}$/, msg: "[label] deve ser no formato XXX.XXX.XXX-XX, onde X é um número"},
     {exp: /^\(\d{2}\)(\d?)\d{8}$/, msg: "[label] deve ser no formato (XX)XXXXXXXXX, onde X é um número"},
+    {exp: /^\d{5}-\d{3}$/, msg: "[label] deve ser no formato XXXXX-XXX, onde X é um número"},
+    {exp: SimpleSchema.RegEx.Email, msg: "[label] não é um endereço de e-mail válido"},
   ]
 });
 

@@ -1,0 +1,50 @@
+<template name="treatments">
+	{{> viewTreatments}}
+	<hr>
+	{{> addTreatment}}
+</template>
+
+<template name="viewTreatments">
+	{{#if existTreatment}}
+		<h1>Tratamentos</h1>
+		<hr>
+		{{#if Template.subscriptionsReady}}
+			<table class="table table-hover">
+
+		  		<thead>
+		  			<tr>
+			  			<th>Data de Início</th>
+			  			<th>Data de Término</th>
+			  			<th>Ações</th>
+			  		</tr>
+		  		</thead>
+			
+				<tbody>
+				{{#each treatments}}
+					<tr>
+						<td>{{formatDate startdate}}</td>
+						<td>{{formatDate enddate}}</td>		  			
+			  			{{#if isInRole "Gerente"}}
+			  			<td>
+			  				<i class="fa fa-eye fa-2x" title="Ver informações"></i>
+			  				<i class="fa fa-close fa-2x" title="Deletar Tratamento"></i>
+			  			</td>
+			  			{{/if}}
+			  		</tr>
+				{{/each}}
+				</tbody>
+
+			</table>
+		{{else}}
+			{{> spinner}}
+		{{/if}}
+	{{/if}}
+</template>
+
+<template name="addTreatment">
+	<h1>Novo Tratamento
+	<i class="fa fa-angle-double-down" data-placement="right" title="Mostrar formulário"></i>
+	</h1>
+	<hr>
+	{{> quickForm collection="Treatments" omitFields="createdAt, patient_id" buttonContent="Enviar" id="insertTreatmentForm" type="insert"}}
+</template>

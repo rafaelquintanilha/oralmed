@@ -1,0 +1,13 @@
+<template name="dentist">
+	<h1>Informações do Dentista</h1>
+	<hr>
+	{{#if Template.subscriptionsReady}}
+      	{{> editDentist}}
+  	{{else}}
+    	{{> spinner}}
+  	{{/if}}
+</template>
+
+<template name="editDentist">
+	{{> quickForm collection="Dentists" omitFields="createdAt" buttonContent="Editar" id="editDentistForm" type="update" doc=selectedDoc}}
+</template>

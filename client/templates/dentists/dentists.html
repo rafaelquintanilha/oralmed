@@ -1,6 +1,6 @@
-<template name="patients">
-	<h1>Pacientes
-	<i class="fa fa-plus-circle" data-placement="right" title="Adicionar paciente"></i>
+<template name="dentists">
+	<h1>Dentistas
+	<i class="fa fa-plus-circle" data-placement="right" title="Adicionar dentista"></i>
 	</h1>
 	<hr>
 	{{#if Template.subscriptionsReady}}
@@ -9,25 +9,25 @@
 	  		<thead>
 	  			<tr>
 		  			<th>Nome</th>
-		  			<th>Idade</th>
 		  			<th>Telefone 1</th>
 		  			<th>Telefone 2</th>
+		  			<th>E-mail</th>
 		  			<th>Ações</th>
 		  		</tr>
 	  		</thead>
 		
 			<tbody>
-			{{#each patients}}
+			{{#each dentists}}
 				<tr>
 		  			<td>{{name}}</td>
-		  			<td>{{getAge birthday}}</td>
 		  			<td>{{contact.phone}}</td>
 		  			<td>{{contact.phone2}}</td>
+		  			<td>{{contact.email}}</td>
 		  			{{#if isInRole "Gerente"}}
 		  			<td>
 		  				<i class="fa fa-medkit fa-2x" title="Tratamentos"></i>
 		  				<i class="fa fa-eye fa-2x" title="Ver informações"></i>
-		  				<i class="fa fa-close fa-2x" title="Deletar paciente"></i>
+		  				<i class="fa fa-close fa-2x" title="Deletar dentista"></i>
 		  			</td>
 		  			{{/if}}
 		  		</tr>

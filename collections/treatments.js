@@ -2,6 +2,10 @@ TreatmentsSchema = new SimpleSchema({
   patient_id: {
     type: String,
   },
+  dentist_id: {
+    type: String,
+    label: "Dentista Responsável",
+  },
   startdate: {
     type: Date,
     label: "Data de Início",
@@ -13,6 +17,21 @@ TreatmentsSchema = new SimpleSchema({
     custom: function () {
       if (this.value !== "" && this.value < this.field('startdate').value) {
         return "badDate";
+      }
+    }
+  },
+  dentalcare: {
+    type: String,
+    label: "Plano Odontológico",
+    autoform: {
+      type: "select",
+      options: function () {
+        return [
+          {label: "Amil", value: "Amil"},
+          {label: "Bradesco", value: "Bradesco"},
+          {label: "Metlife", value: "Metlife"},
+          {label: "Nenhum (Particular)", value: "Particular"},
+        ];
       }
     }
   },

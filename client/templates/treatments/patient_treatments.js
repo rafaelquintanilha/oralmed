@@ -1,14 +1,31 @@
-Template.treatments.onRendered(function() {
-  var self = this;
-  self.autorun(function () {
-    self.subscribe("patientTreatments", Router.current().params._id);
-  });
-});
-
 Template.treatment.onCreated(function() {
   var self = this;
   self.autorun(function () {
     self.subscribe("treatment", Router.current().params._id);
+    self.subscribe("dentists");
+  });
+});
+
+Template.addTreatment.onCreated(function() {
+  var self = this;
+  self.autorun(function () {
+    self.subscribe("dentists");
+  });
+});
+
+Template.viewTreatments.onCreated(function() {
+  var self = this;
+  self.autorun(function () {
+    self.subscribe("patientTreatments", Router.current().params._id);
+    self.subscribe("patient", Router.current().params._id);
+    self.subscribe("dentistsName");
+  });
+});
+
+Template.treatmentForm.onCreated(function() {
+  var self = this;
+  self.autorun(function () {
+    self.subscribe("dentistsName");
   });
 });
 
@@ -22,6 +39,19 @@ Template.viewTreatments.onRendered(function() {
   $('.fa').tooltip();
 });
 
+var mapDentists = function() {
+  return Dentists.find().map(function(d) {
+    return {label: d.name, value: d._id};
+  });
+}
+
+Template.treatmentForm.helpers({
+  'getDentistName': function(id) {
+    return Dentists.findOne(id).name;
+  },
+  optionsHelper: mapDentists
+});
+
 Template.viewTreatments.helpers({
   'treatments': function() {
     return Treatments.find({}, {sort: {startdate: 1}});
@@ -29,6 +59,14 @@ Template.viewTreatments.helpers({
 
   'existTreatment': function() {
     return Treatments.find().count() > 0 ? true : false;
+  },
+
+  'getPatientName': function() {
+    return Patients.findOne(Router.current().params._id).name;
+  },
+
+  'getDentistName': function(id) {
+    return Dentists.findOne(id).name;
   },
 
   // Refer to: http://momentjs.com/docs/#/parsing/string-format/
@@ -87,7 +125,8 @@ AutoForm.hooks({
     onSuccess: function(formType, result) {
       Meteor.call('getPatient', Router.current().params._id, function(error, result) {
         if (error) return alert(error.reason);
-        Router.go('treatments', {_id: result.patient_id});
+        //Router.go('patientTreatments', {_id: result.patient_id});
+        history.back();
       });
     },
   },

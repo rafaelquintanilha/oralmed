@@ -1,20 +1,16 @@
-<template name="treatments">
-	{{> viewTreatments}}
-	<hr>
-	{{> addTreatment}}
-</template>
-
-<template name="viewTreatments">
+<template name="dentistTreatments">
 	{{#if existTreatment}}
-		<h1>Tratamentos</h1>
-		<hr>
 		{{#if Template.subscriptionsReady}}
+			<h1>Tratamentos de {{getDentistName}}</h1>
+			<hr>
 			<table class="table table-hover">
 
 		  		<thead>
 		  			<tr>
+		  				<th>Paciente</th>
 			  			<th>Data de Início</th>
 			  			<th>Data de Término</th>
+			  			<th>Plano Dentário</th>
 			  			<th>Ações</th>
 			  		</tr>
 		  		</thead>
@@ -22,8 +18,10 @@
 				<tbody>
 				{{#each treatments}}
 					<tr>
+						<td>{{getPatientName patient_id}}</td>
 						<td>{{formatDate startdate}}</td>
 						<td>{{formatDate enddate}}</td>		  			
+						<td>{{dentalcare}}</td>
 			  			{{#if isInRole "Gerente"}}
 			  			<td>
 			  				<i class="fa fa-eye fa-2x" title="Ver informações"></i>
@@ -39,12 +37,4 @@
 			{{> spinner}}
 		{{/if}}
 	{{/if}}
-</template>
-
-<template name="addTreatment">
-	<h1>Novo Tratamento
-	<i class="fa fa-angle-double-down" data-placement="right" title="Mostrar formulário"></i>
-	</h1>
-	<hr>
-	{{> quickForm collection="Treatments" omitFields="createdAt, patient_id" buttonContent="Enviar" id="insertTreatmentForm" type="insert"}}
 </template>

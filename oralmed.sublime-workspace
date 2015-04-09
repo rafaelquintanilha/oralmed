@@ -111,7 +111,23 @@
 			"file": "lib/router.js",
 			"settings":
 			{
-				"buffer_size": 466,
+				"buffer_size": 798,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/templates/dentists/dentists.html",
+			"settings":
+			{
+				"buffer_size": 713,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/templates/dentists/dentists.js",
+			"settings":
+			{
+				"buffer_size": 581,
 				"line_ending": "Unix"
 			}
 		},
@@ -135,7 +151,15 @@
 			"file": "client/templates/patients/patients.html",
 			"settings":
 			{
-				"buffer_size": 884,
+				"buffer_size": 974,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/templates/patients/patients.js",
+			"settings":
+			{
+				"buffer_size": 1097,
 				"line_ending": "Unix"
 			}
 		},
@@ -151,15 +175,7 @@
 			"file": "client/templates/patients/add_patient.js",
 			"settings":
 			{
-				"buffer_size": 292,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "client/templates/home.html",
-			"settings":
-			{
-				"buffer_size": 129,
+				"buffer_size": 883,
 				"line_ending": "Unix"
 			}
 		},
@@ -167,7 +183,23 @@
 			"file": "collections/patients.js",
 			"settings":
 			{
-				"buffer_size": 1872,
+				"buffer_size": 3156,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "server/publications.js",
+			"settings":
+			{
+				"buffer_size": 341,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/header.html",
+			"settings":
+			{
+				"buffer_size": 1159,
 				"line_ending": "Unix"
 			}
 		}
@@ -196,21 +228,20 @@
 	},
 	"file_history":
 	[
-		"/Z/Users/Rafael/Desktop/oralmed/client/templates/patients/patients.js",
-		"/home/rafael/oralmed/server/publications.js",
+		"/home/rafael/oralmed/client/templates/home.html",
 		"/home/rafael/oralmed/client/header.html",
+		"/home/rafael/oralmed/client/templates/tab.html",
+		"/home/rafael/oralmed/server/publications.js",
 		"/home/rafael/oralmed/client/main.html",
 		"/home/rafael/oralmed/client/init.js",
 		"/home/rafael/oralmed/collections/patients.js",
 		"/home/rafael/oralmed/client/templates/patients/patients.js",
 		"/home/rafael/oralmed/client/css/main.css",
 		"/home/rafael/oralmed/client/layout.html",
-		"/home/rafael/oralmed/client/templates/home.html",
 		"/home/rafael/oralmed/client/templates/pacientes/patients.js",
 		"/home/rafael/oralmed/client/templates/pacientes/add_patients.html",
 		"/home/rafael/oralmed/client/templates/pacientes/add_patients.js",
 		"/home/rafael/oralmed/client/templates/pacientes/patients.html",
-		"/home/rafael/oralmed/client/templates/tab.html",
 		"/home/rafael/oralmed/client/templates/pacientes.html",
 		"/home/rafael/oralmed/client/header.js",
 		"/home/rafael/oralmed/oralmed.js",
@@ -329,7 +360,7 @@
 	"groups":
 	[
 		{
-			"selected": 6,
+			"selected": 11,
 			"sheets":
 			[
 				{
@@ -337,21 +368,19 @@
 					"file": "lib/router.js",
 					"settings":
 					{
-						"buffer_size": 466,
+						"buffer_size": 798,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								239,
-								239
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"remote_loading": false,
-							"synced": false,
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
@@ -364,6 +393,60 @@
 				},
 				{
 					"buffer": 1,
+					"file": "client/templates/dentists/dentists.html",
+					"settings":
+					{
+						"buffer_size": 713,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								476,
+								476
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "client/templates/dentists/dentists.js",
+					"settings":
+					{
+						"buffer_size": 581,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								581,
+								581
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
 					"file": "server/roles.js",
 					"settings":
 					{
@@ -380,8 +463,6 @@
 						],
 						"settings":
 						{
-							"remote_loading": false,
-							"synced": false,
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
@@ -392,7 +473,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 4,
 					"file": "client/login.html",
 					"settings":
 					{
@@ -409,8 +490,6 @@
 						],
 						"settings":
 						{
-							"remote_loading": false,
-							"synced": false,
 							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
@@ -420,26 +499,23 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 5,
 					"file": "client/templates/patients/patients.html",
 					"settings":
 					{
-						"buffer_size": 884,
+						"buffer_size": 974,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								750,
-								750
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
 							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
@@ -450,7 +526,34 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 6,
+					"file": "client/templates/patients/patients.js",
+					"settings":
+					{
+						"buffer_size": 1097,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
 					"file": "client/templates/patients/add_patient.html",
 					"settings":
 					{
@@ -467,8 +570,6 @@
 						],
 						"settings":
 						{
-							"remote_loading": false,
-							"synced": false,
 							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
@@ -478,25 +579,23 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 8,
 					"file": "client/templates/patients/add_patient.js",
 					"settings":
 					{
-						"buffer_size": 292,
+						"buffer_size": 883,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								282,
-								282
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"remote_loading": false,
-							"synced": false,
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
@@ -506,27 +605,52 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "client/templates/home.html",
+					"buffer": 9,
+					"file": "collections/patients.js",
 					"settings":
 					{
-						"buffer_size": 129,
+						"buffer_size": 3156,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								111,
-								111
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 740.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "server/publications.js",
+					"settings":
+					{
+						"buffer_size": 341,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -535,31 +659,29 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"file": "collections/patients.js",
+					"buffer": 11,
+					"file": "client/header.html",
 					"settings":
 					{
-						"buffer_size": 1872,
+						"buffer_size": 1159,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1802,
-								1802
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 740.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -601,10 +723,6 @@
 	"output.exec":
 	{
 		"height": 94.0
-	},
-	"output.sftp":
-	{
-		"height": 130.0
 	},
 	"replace":
 	{

@@ -1,0 +1,59 @@
+<template name="patientTreatments">
+	{{> viewTreatments}}
+	<hr>
+	{{> addTreatment}}
+</template>
+
+<template name="viewTreatments">
+	{{#if existTreatment}}
+		{{#if Template.subscriptionsReady}}
+			<h1>Tratamentos de {{getPatientName}}</h1>
+			<hr>
+			<table class="table table-hover">
+
+		  		<thead>
+		  			<tr>
+			  			<th>Data de Início</th>
+			  			<th>Data de Término</th>
+			  			<th>Dentista Responsável</th>
+			  			<th>Plano Dentário</th>
+			  			<th>Ações</th>
+			  		</tr>
+		  		</thead>
+			
+				<tbody>
+				{{#each treatments}}
+					<tr>
+						<td>{{formatDate startdate}}</td>
+						<td>{{formatDate enddate}}</td>		  			
+						<td>{{getDentistName dentist_id}}</td>
+						<td>{{dentalcare}}</td>
+			  			{{#if isInRole "Gerente"}}
+			  			<td>
+			  				<i class="fa fa-eye fa-2x" title="Ver informações"></i>
+			  				<i class="fa fa-close fa-2x" title="Deletar Tratamento"></i>
+			  			</td>
+			  			{{/if}}
+			  		</tr>
+				{{/each}}
+				</tbody>
+
+			</table>
+		{{else}}
+			{{> spinner}}
+		{{/if}}
+	{{/if}}
+</template>
+
+<template name="addTreatment">
+	<h1>Novo Tratamento
+	<i class="fa fa-angle-double-down" data-placement="right" title="Mostrar formulário"></i>
+	</h1>
+	<hr>
+	{{!--
+	{{> quickForm collection="Treatments" omitFields="createdAt, patient_id" buttonContent="Enviar" id="insertTreatmentForm" type="insert"}}
+	--}}
+	{{#autoForm id="insertTreatmentForm" type="insert" collection="Treatments"}}
+		{{> treatmentForm}}
+	{{/autoForm}}
+</template>

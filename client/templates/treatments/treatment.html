@@ -9,5 +9,11 @@
 </template>
 
 <template name="editTreatment">
+	{{!--
 	{{> quickForm collection="Treatments" omitFields="createdAt, patient_id" buttonContent="Editar" id="editTreatmentForm" type="update" doc=selectedDoc}}
+	--}}
+
+	{{#autoForm id="editTreatmentForm" type="update" collection="Treatments" doc=selectedDoc}}
+		{{> treatmentForm}}
+	{{/autoForm}}
 </template>

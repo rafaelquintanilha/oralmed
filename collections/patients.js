@@ -25,16 +25,6 @@ PatientsSchema = new SimpleSchema({
     optional: true,
     regEx: /^\d{3}\.\d{3}\.\d{3}-\d{2}$/ // Não faz conta de dígito verificador, apenas olha a máscara
   },
-  dentalcare: {
-    type: String,
-    label: "Plano Odontológico",
-    allowedValues: ['Amil', 'Bradesco', 'Metlife'],
-    autoform: {
-      afFieldInput: {
-        firstOption: "(Selecione)"
-      }
-    }
-  },
   contact: {
     type: Object,
     label: "Contato"
@@ -130,5 +120,5 @@ Meteor.methods({
 
     check(id, String)
     return Patients.remove(id);
-  }
+  },
 })

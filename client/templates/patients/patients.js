@@ -17,7 +17,7 @@ Template.patients.events({
 		Router.go('patient', {_id: this._id});
 	},
 	'click .fa-medkit': function() {
-		Router.go('treatments', {_id: this._id});
+		Router.go('patientTreatments', {_id: this._id});
 	},
 	"click .fa-close": function() {
 		var id = this._id; 

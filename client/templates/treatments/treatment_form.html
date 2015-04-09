@@ -1,0 +1,40 @@
+<template name="treatmentForm">
+	<div class="form-group {{#if afFieldIsInvalid name='dentist_id'}}has-error{{/if}}">
+		<label class="control-label">{{afFieldLabelText name='dentist_id'}}</label>
+		{{> afFieldInput name='dentist_id' type="select" options=optionsHelper}}
+		{{#if afFieldIsInvalid name='dentist_id'}}
+			<span class="help-block">{{{afFieldMessage name='dentist_id'}}}</span>
+		{{/if}}
+	</div>
+	<div class="form-group {{#if afFieldIsInvalid name='startdate'}}has-error{{/if}}">
+		<label class="control-label">{{afFieldLabelText name='startdate'}}</label>
+		{{> afFieldInput name='startdate'}}
+		{{#if afFieldIsInvalid name='startdate'}}
+			<span class="help-block">{{{afFieldMessage name='startdate'}}}</span>
+		{{/if}}
+	</div>
+	<div class="form-group {{#if afFieldIsInvalid name='enddate'}}has-error{{/if}}">
+		<label class="control-label">{{afFieldLabelText name='enddate'}}</label>
+		{{> afFieldInput name='enddate'}}
+		{{#if afFieldIsInvalid name='enddate'}}
+			<span class="help-block">{{{afFieldMessage name='enddate'}}}</span>
+		{{/if}}
+	</div>
+	<div class="form-group {{#if afFieldIsInvalid name='dentalcare'}}has-error{{/if}}">
+		<label class="control-label">{{afFieldLabelText name='dentalcare'}}</label>
+		{{> afFieldInput name='dentalcare'}}
+		{{#if afFieldIsInvalid name='dentalcare'}}
+			<span class="help-block">{{{afFieldMessage name='dentalcare'}}}</span>
+		{{/if}}
+	</div>	
+	<div class="form-group {{#if afFieldIsInvalid name='details'}}has-error{{/if}}">
+		<label class="control-label">{{afFieldLabelText name='details'}}</label>
+		{{> afFieldInput name='details'}}
+		{{#if afFieldIsInvalid name='details'}}
+			<span class="help-block">{{{afFieldMessage name='details'}}}</span>
+		{{/if}}
+	</div>
+	<div class="form-group">
+		<button type="submit" class="btn btn-primary">Enviar</button>
+	</div>
+</template>
